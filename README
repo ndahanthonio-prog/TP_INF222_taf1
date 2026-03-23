@@ -1,0 +1,31 @@
+# Blog API
+
+A RESTful API for managing blog articles built with Node.js, Express, SQLite, and Swagger.
+
+## Installation
+
+1. Clone the repository
+2. Run `npm install`
+3. Run `npm start` or `npm run dev`
+
+## Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/articles` | Create a new article |
+| GET | `/api/articles` | Get all articles (filter by ?category=, ?author=, ?date=) |
+| GET | `/api/articles/:id` | Get a single article by ID |
+| PUT | `/api/articles/:id` | Update an article |
+| DELETE | `/api/articles/:id` | Delete an article |
+| GET | `/api/articles/search?query=` | Search articles by title or content |
+
+## Documentation
+
+Swagger documentation is available at `/api-docs` when the server is running.
+
+## Technologies
+
+- Node.js
+- Express
+- SQLite3
+- Swagger UI Express
